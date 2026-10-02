@@ -1,5 +1,5 @@
+```css
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 
 * {
     margin: 0;
@@ -7,14 +7,12 @@
     box-sizing: border-box;
 }
 
-
 body {
     background: #e8ecef;
     font-family: 'Inter', Arial, sans-serif;
     color: #263238;
     padding: 45px 20px;
 }
-
 
 /* =========================
    CV
@@ -27,7 +25,6 @@ body {
     background: #ffffff;
     box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12);
 }
-
 
 /* =========================
    HEADER
@@ -45,11 +42,9 @@ body {
     gap: 50px;
 }
 
-
 .header-text {
     max-width: 650px;
 }
-
 
 .label {
     color: #c9a45c;
@@ -59,14 +54,12 @@ body {
     margin-bottom: 22px;
 }
 
-
 .header h1 {
     font-size: 60px;
     line-height: 0.98;
     letter-spacing: -2px;
     font-weight: 800;
 }
-
 
 .position {
     margin-top: 22px;
@@ -75,7 +68,6 @@ body {
     letter-spacing: 1px;
 }
 
-
 .intro {
     margin-top: 20px;
     max-width: 570px;
@@ -83,7 +75,6 @@ body {
     line-height: 1.8;
     color: #aebfc3;
 }
-
 
 .photo-wrapper {
     width: 190px;
@@ -94,13 +85,11 @@ body {
     background: #122d35;
 }
 
-
 .photo-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 
 /* =========================
    CONTACT BAR
@@ -113,7 +102,6 @@ body {
     border-bottom: 1px solid #e1e5e6;
 }
 
-
 .contact-item {
     display: flex;
     align-items: center;
@@ -122,11 +110,9 @@ body {
     border-right: 1px solid #e1e5e6;
 }
 
-
 .contact-item:last-child {
     border-right: none;
 }
-
 
 .icon {
     display: flex;
@@ -144,7 +130,6 @@ body {
     border-radius: 50%;
 }
 
-
 .contact-item small {
     display: block;
     color: #9aa4a8;
@@ -154,13 +139,11 @@ body {
     margin-bottom: 4px;
 }
 
-
 .contact-item p {
     font-size: 11px;
     font-weight: 600;
     color: #34454b;
 }
-
 
 /* =========================
    MAIN
@@ -169,29 +152,25 @@ body {
 .main {
     display: grid;
     grid-template-columns: 40% 60%;
+    align-items: start;
 }
 
-
 .left-column {
-    padding: 50px 40px 50px 60px;
+    padding: 45px 40px 55px 60px;
     border-right: 1px solid #e3e7e8;
 }
 
-
 .right-column {
-    padding: 50px 60px 50px 40px;
+    padding: 45px 60px 55px 40px;
 }
-
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
-
 
 section:last-child {
     margin-bottom: 0;
 }
-
 
 /* =========================
    SECTION TITLE
@@ -201,9 +180,8 @@ section:last-child {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
-
 
 .title span {
     color: #c9a45c;
@@ -211,14 +189,12 @@ section:last-child {
     font-weight: 800;
 }
 
-
 .title h2 {
-    font-size: 17px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #122d35;
 }
-
 
 .title::after {
     content: "";
@@ -227,34 +203,32 @@ section:last-child {
     background: #dfe4e5;
 }
 
-
 /* =========================
    PERSONAL DATA
 ========================= */
 
 .personal-data {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 17px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 18px;
 }
-
 
 .personal-data small {
     display: block;
     color: #9aa4a8;
-    font-size: 9px;
+    font-size: 8px;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.7px;
     margin-bottom: 5px;
 }
 
-
 .personal-data p {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     color: #34454b;
+    line-height: 1.4;
 }
-
 
 /* =========================
    SKILLS
@@ -263,9 +237,8 @@ section:last-child {
 .skills {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
-
 
 .skill-top {
     display: flex;
@@ -273,18 +246,15 @@ section:last-child {
     margin-bottom: 8px;
 }
 
-
 .skill-top span {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
 }
 
-
 .skill-top b {
-    font-size: 10px;
+    font-size: 9px;
     color: #c9a45c;
 }
-
 
 .bar {
     height: 5px;
@@ -292,12 +262,10 @@ section:last-child {
     overflow: hidden;
 }
 
-
 .bar div {
     height: 100%;
     background: #122d35;
 }
-
 
 /* =========================
    EDUCATION TIMELINE
@@ -307,7 +275,6 @@ section:last-child {
     position: relative;
     padding-left: 20px;
 }
-
 
 .timeline::before {
     content: "";
@@ -319,17 +286,14 @@ section:last-child {
     background: #d9dfe1;
 }
 
-
 .timeline-item {
     position: relative;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
-
 
 .timeline-item:last-child {
     margin-bottom: 0;
 }
-
 
 .timeline-item::before {
     content: "";
@@ -342,39 +306,34 @@ section:last-child {
     top: 5px;
 }
 
-
 .timeline-year {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 700;
     color: #c9a45c;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
-
 .timeline-content h3 {
-    font-size: 13px;
-    margin-bottom: 5px;
+    font-size: 11px;
+    margin-bottom: 4px;
     color: #263b42;
 }
 
-
 .timeline-content p {
-    font-size: 10px;
+    font-size: 9px;
     color: #8a969b;
 }
-
 
 /* =========================
    ABOUT
 ========================= */
 
 .description {
-    font-size: 12px;
-    line-height: 1.9;
+    font-size: 11px;
+    line-height: 1.8;
     color: #657278;
     text-align: justify;
 }
-
 
 /* =========================
    EXPERIENCE
@@ -383,16 +342,15 @@ section:last-child {
 .experience {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 13px;
 }
-
 
 .experience-item {
     display: grid;
-    grid-template-columns: 38px 1fr;
-    gap: 15px;
+    grid-template-columns: 35px 1fr;
+    gap: 13px;
 
-    padding: 20px;
+    padding: 17px;
 
     border: 1px solid #e2e6e7;
     background: #ffffff;
@@ -400,42 +358,36 @@ section:last-child {
     transition: 0.3s;
 }
 
-
 .experience-item:hover {
     border-color: #c9a45c;
     transform: translateY(-2px);
 }
 
-
 .experience-number {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 800;
     color: #c9a45c;
 }
 
-
 .experience-item small {
     display: block;
-    font-size: 8px;
+    font-size: 7px;
     color: #9aa4a8;
     letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.experience-item h3 {
+    font-size: 12px;
+    color: #263b42;
     margin-bottom: 6px;
 }
 
-
-.experience-item h3 {
-    font-size: 13px;
-    color: #263b42;
-    margin-bottom: 8px;
-}
-
-
 .experience-item p {
-    font-size: 10px;
-    line-height: 1.7;
+    font-size: 9px;
+    line-height: 1.6;
     color: #7a878c;
 }
-
 
 /* =========================
    HIGHLIGHT
@@ -444,37 +396,33 @@ section:last-child {
 .highlight {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 13px;
 }
 
-
 .highlight > div {
-    padding: 20px;
+    padding: 17px;
     background: #f5f7f7;
     border-top: 3px solid #c9a45c;
 }
 
-
 .highlight h3 {
-    font-size: 12px;
+    font-size: 11px;
     color: #122d35;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 }
-
 
 .highlight p {
-    font-size: 10px;
-    line-height: 1.7;
+    font-size: 9px;
+    line-height: 1.6;
     color: #748086;
 }
-
 
 /* =========================
    FOOTER
 ========================= */
 
 footer {
-    padding: 25px 60px;
+    padding: 23px 60px;
     background: #122d35;
     color: white;
 
@@ -483,28 +431,24 @@ footer {
     justify-content: space-between;
 }
 
-
 footer strong {
     display: block;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 1px;
 }
-
 
 footer span {
     display: block;
     margin-top: 4px;
-    font-size: 9px;
+    font-size: 8px;
     color: #9fb0b4;
 }
 
-
 footer > p {
-    font-size: 10px;
+    font-size: 9px;
     color: #c9a45c;
     font-weight: 700;
 }
-
 
 /* =========================
    TABLET
@@ -531,9 +475,7 @@ footer > p {
     .right-column {
         padding: 40px 30px;
     }
-
 }
-
 
 /* =========================
    MOBILE
@@ -546,7 +488,6 @@ footer > p {
         background: white;
     }
 
-
     .header {
         min-height: auto;
         padding: 40px 25px;
@@ -555,39 +496,32 @@ footer > p {
         gap: 30px;
     }
 
-
     .header h1 {
         font-size: 42px;
     }
-
 
     .intro {
         margin-left: auto;
         margin-right: auto;
     }
 
-
     .photo-wrapper {
         width: 155px;
         height: 190px;
     }
 
-
     .contact-bar {
         grid-template-columns: 1fr;
     }
-
 
     .contact-item {
         border-right: none;
         border-bottom: 1px solid #e1e5e6;
     }
 
-
     .main {
         grid-template-columns: 1fr;
     }
-
 
     .left-column {
         border-right: none;
@@ -595,20 +529,20 @@ footer > p {
         padding: 40px 25px;
     }
 
-
     .right-column {
         padding: 40px 25px;
     }
 
+    .personal-data {
+        grid-template-columns: 1fr;
+    }
 
     .highlight {
         grid-template-columns: 1fr;
     }
 
-
     footer {
         padding: 25px;
     }
-
 }
 ```
