@@ -14,7 +14,7 @@ body {
 }
 
 /* =========================
-   CV
+   CV UTAMA
 ========================= */
 
 .cv {
@@ -75,10 +75,13 @@ body {
     color: #aebfc3;
 }
 
+/* FOTO */
+
 .photo-wrapper {
     width: 190px;
     height: 230px;
     flex-shrink: 0;
+
     border: 6px solid #c9a45c;
     padding: 5px;
     background: #122d35;
@@ -91,12 +94,13 @@ body {
 }
 
 /* =========================
-   CONTACT BAR
+   KONTAK
 ========================= */
 
 .contact-bar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     background: #f7f8f8;
     border-bottom: 1px solid #e1e5e6;
 }
@@ -105,7 +109,9 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+
     padding: 20px 30px;
+
     border-right: 1px solid #e1e5e6;
 }
 
@@ -126,15 +132,19 @@ body {
 
     font-size: 9px;
     font-weight: 800;
+
     border-radius: 50%;
 }
 
 .contact-item small {
     display: block;
+
     color: #9aa4a8;
     font-size: 9px;
+
     text-transform: uppercase;
     letter-spacing: 1px;
+
     margin-bottom: 4px;
 }
 
@@ -155,16 +165,16 @@ body {
 }
 
 .left-column {
-    padding: 45px 40px 55px 60px;
+    padding: 45px 40px 50px 60px;
     border-right: 1px solid #e3e7e8;
 }
 
 .right-column {
-    padding: 45px 60px 55px 40px;
+    padding: 45px 60px 50px 40px;
 }
 
 section {
-    margin-bottom: 45px;
+    margin-bottom: 42px;
 }
 
 section:last-child {
@@ -172,38 +182,44 @@ section:last-child {
 }
 
 /* =========================
-   SECTION TITLE
+   JUDUL SECTION
 ========================= */
 
 .title {
     display: flex;
     align-items: center;
+
     gap: 12px;
     margin-bottom: 22px;
 }
 
 .title span {
     color: #c9a45c;
+
     font-size: 11px;
     font-weight: 800;
 }
 
 .title h2 {
     font-size: 16px;
+
     text-transform: uppercase;
     letter-spacing: 1.5px;
+
     color: #122d35;
 }
 
 .title::after {
     content: "";
+
     height: 1px;
     flex: 1;
+
     background: #dfe4e5;
 }
 
 /* =========================
-   PERSONAL DATA
+   DATA PRIBADI
 ========================= */
 
 .personal-data {
@@ -213,81 +229,102 @@ section:last-child {
     row-gap: 18px;
 }
 
+.personal-data div {
+    min-width: 0;
+}
+
 .personal-data small {
     display: block;
+
     color: #9aa4a8;
     font-size: 8px;
+
     text-transform: uppercase;
     letter-spacing: 0.7px;
+
     margin-bottom: 5px;
 }
 
 .personal-data p {
     font-size: 10px;
     font-weight: 600;
+
     color: #34454b;
+
     line-height: 1.4;
+
+    word-break: normal;
 }
 
 /* =========================
-   SKILLS
+   KEAHLIAN
 ========================= */
 
 .skills {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 16px;
 }
 
 .skill-top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
+
+    margin-bottom: 7px;
 }
 
 .skill-top span {
     font-size: 11px;
     font-weight: 600;
+
+    color: #34454b;
 }
 
 .skill-top b {
-    font-size: 9px;
-    color: #c9a45c;
+    display: none;
 }
 
 .bar {
     height: 5px;
+
     background: #e5e9ea;
     overflow: hidden;
 }
 
 .bar div {
     height: 100%;
+
     background: #122d35;
 }
 
 /* =========================
-   EDUCATION TIMELINE
+   PENDIDIKAN
 ========================= */
 
 .timeline {
     position: relative;
+
     padding-left: 20px;
 }
 
 .timeline::before {
     content: "";
+
     position: absolute;
+
     left: 3px;
     top: 5px;
     bottom: 5px;
+
     width: 1px;
+
     background: #d9dfe1;
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 24px;
+
+    margin-bottom: 22px;
 }
 
 .timeline-item:last-child {
@@ -296,62 +333,81 @@ section:last-child {
 
 .timeline-item::before {
     content: "";
+
     position: absolute;
+
     width: 7px;
     height: 7px;
+
     background: #c9a45c;
+
     border-radius: 50%;
+
     left: -20px;
     top: 5px;
 }
 
 .timeline-year {
     font-size: 9px;
+
     font-weight: 700;
+
     color: #c9a45c;
+
     margin-bottom: 4px;
 }
 
 .timeline-content h3 {
     font-size: 11px;
+
     margin-bottom: 4px;
+
     color: #263b42;
 }
 
 .timeline-content p {
     font-size: 9px;
+
     color: #8a969b;
 }
 
 /* =========================
-   ABOUT
+   TENTANG SAYA
 ========================= */
 
 .description {
     font-size: 11px;
+
     line-height: 1.8;
+
     color: #657278;
+
     text-align: justify;
 }
 
 /* =========================
-   EXPERIENCE
+   PENGALAMAN
 ========================= */
 
 .experience {
     display: flex;
+
     flex-direction: column;
-    gap: 13px;
+
+    gap: 12px;
 }
 
 .experience-item {
     display: grid;
+
     grid-template-columns: 35px 1fr;
+
     gap: 13px;
 
-    padding: 17px;
+    padding: 16px;
 
     border: 1px solid #e2e6e7;
+
     background: #ffffff;
 
     transition: 0.3s;
@@ -359,60 +415,79 @@ section:last-child {
 
 .experience-item:hover {
     border-color: #c9a45c;
+
     transform: translateY(-2px);
 }
 
 .experience-number {
     font-size: 10px;
+
     font-weight: 800;
+
     color: #c9a45c;
 }
 
 .experience-item small {
     display: block;
+
     font-size: 7px;
+
     color: #9aa4a8;
+
     letter-spacing: 1px;
+
     margin-bottom: 5px;
 }
 
 .experience-item h3 {
     font-size: 12px;
+
     color: #263b42;
+
     margin-bottom: 6px;
 }
 
 .experience-item p {
     font-size: 9px;
+
     line-height: 1.6;
+
     color: #7a878c;
 }
 
 /* =========================
-   HIGHLIGHT
+   TUJUAN & KARAKTER
 ========================= */
 
 .highlight {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 13px;
 }
 
 .highlight > div {
     padding: 17px;
+
     background: #f5f7f7;
+
     border-top: 3px solid #c9a45c;
 }
 
 .highlight h3 {
     font-size: 11px;
+
     color: #122d35;
+
     margin-bottom: 7px;
 }
 
 .highlight p {
     font-size: 9px;
+
     line-height: 1.6;
+
     color: #748086;
 }
 
@@ -422,30 +497,41 @@ section:last-child {
 
 footer {
     padding: 23px 60px;
+
     background: #122d35;
+
     color: white;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
 footer strong {
     display: block;
+
     font-size: 10px;
+
     letter-spacing: 1px;
 }
 
 footer span {
     display: block;
+
     margin-top: 4px;
+
     font-size: 8px;
+
     color: #9fb0b4;
 }
 
 footer > p {
     font-size: 9px;
+
     color: #c9a45c;
+
     font-weight: 700;
 }
 
@@ -477,21 +563,26 @@ footer > p {
 }
 
 /* =========================
-   MOBILE
+   HP / MOBILE
 ========================= */
 
 @media (max-width: 650px) {
 
     body {
         padding: 0;
+
         background: white;
     }
 
     .header {
         min-height: auto;
+
         padding: 40px 25px;
+
         flex-direction: column-reverse;
+
         text-align: center;
+
         gap: 30px;
     }
 
@@ -515,6 +606,7 @@ footer > p {
 
     .contact-item {
         border-right: none;
+
         border-bottom: 1px solid #e1e5e6;
     }
 
@@ -524,7 +616,9 @@ footer > p {
 
     .left-column {
         border-right: none;
+
         border-bottom: 1px solid #e3e7e8;
+
         padding: 40px 25px;
     }
 
@@ -533,7 +627,13 @@ footer > p {
     }
 
     .personal-data {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        column-gap: 20px;
+    }
+
+    .personal-data p {
+        font-size: 10px;
     }
 
     .highlight {
